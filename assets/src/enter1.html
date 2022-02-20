@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout">
+        //= template/header.html
+		<main class="page-content">
+			<div class="container">
+                <div class="enter-view">
+                    <div class="enter-view__in">
+                        <h1 class="m-center">Вход</h1>
+                        <div class="tabs">
+                            <ul class="tabs__nav">
+                                <li class="tabs__item active">
+                                    <a href="#individual" class="tabs__link">Физическое лицо</a>
+                                </li>
+                                <li class="tabs__item">
+                                    <a href="#entity" class="tabs__link">Юридическое лицо</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="individual" class="tab-pane active"> 
+                                    <form action="" method="post">
+                                        <div class="page-form">
+                                            <div class="page-form__item">
+                                                <label for="phone__ind" class="page-form__label">
+                                                    Номер телефона <span>*</span>
+                                                </label>
+                                                <div class="page-form__in">
+                                                    <input type="tel" id="phone__ind" placeholder="+375 (__) ___-__-__">
+                                                </div>
+                                            </div>
+                                            <div class="page-form__item m-error">
+                                                <label for="password__ind" class="page-form__label">
+                                                    Пароль <span>*</span>
+                                                </label>
+                                                <div class="page-form__in">
+                                                    <input type="password" id="password__ind">
+                                                    <a href="#" class="password-toggle" data-show-password="#password__ind"></a>
+                                                    <span class="error-message">Неверный пароль</span>
+                                                </div>
+                                                <div class="page-form__add">
+                                                    <label class="switch">
+                                                        <input type="checkbox" id="rememberMe"/>
+                                                        <div></div>
+                                                        <span class="switch__txt">Запомнить меня</span>
+                                                    </label>
+                                                    <a href="#">Востановить по sms</a>
+                                                </div>
+                                            </div>
+                                            <div class="page-form__item">
+                                                <input type="submit" value="Войти" class="page-form__submit">
+                                            </div>
+                                            <div class="page-form__first">
+                                                Я тут впервые и хочу <a href="#">зарегистрироваться</a> 
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="entity" class="tab-pane"> 
+                                    <div class="page-form">
+                                        <div class="page-form__item">
+                                            <label for="phone__entity" class="page-form__label">
+                                                Номер телефона <span>*</span>
+                                            </label>
+                                            <div class="page-form__in">
+                                                <input type="tel" id="phone__entity" placeholder="+375 (__) ___-__-__">
+                                            </div>
+                                        </div>
+                                        <div class="page-form__item">
+                                            <label for="email__entity" class="page-form__label">
+                                                Электронная почта
+                                            </label>
+                                            <div class="page-form__in">
+                                                <input type="email" id="email__entity">
+                                            </div>
+                                        </div>
+                                        <div class="page-form__item">
+                                            <label for="password__entity" class="page-form__label">
+                                                Пароль <span>*</span>
+                                            </label>
+                                            <div class="page-form__in">
+                                                <input type="password" id="password__entity">
+                                                <a href="#" class="password-toggle" data-show-password="#password__entity"></a>
+                                            </div>
+                                            <div class="page-form__add">
+                                                <label class="switch">
+                                                    <input type="checkbox" id="rememberMe"/>
+                                                    <div></div>
+                                                    <span class="switch__txt">Запомнить меня</span>
+                                                </label>
+                                                <a href="#">Востановить по sms</a>
+                                            </div>
+                                        </div>
+                                        <div class="page-form__item">
+                                            <input type="submit" value="Войти" class="page-form__submit">
+                                        </div>
+                                        <div class="page-form__first">
+                                            Я тут впервые и хочу <a href="#">зарегистрироваться</a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        2021 &copy; Интернет-магазин "Остров чистоты и вкуса". ЧТУП «ЗападХимТорг», УНП 590828925.<br>
+                        Государственная регистрация: Гродненский областной исполнительный комитет от 16.01.2008г №590828925.<br>
+                        231335, Гродненская обл., Ивьевский р-н, аг. Липнишки, ул. Виленская, д. 12А, корп. 1, комн. 6
+
+                        Регистрационный номер в Торговом реестре Республики Беларусь 494498 от 21.10.2020
+                    </div>
+                </div>	
+			</div>
+		</main>
+	</div><!-- END LAYOUT-->
+	<script src="js/libs/libs.js"></script>
+	<script src="js/interface.js"></script>
+</body>
+</html>

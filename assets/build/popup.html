@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>title</title>
+    
+    <!-- favicon -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon end-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- og  -->
+    <!-- <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="img/og.jpg"> -->
+    <!-- og end-->
+    <link href="css/libs.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--LAYOUT-->
+    <div class="layout">
+        <header class="page-header m-personal">
+        	<div class="container">
+        		<div class="page-header__wrap">
+                    <div class="page-header__person">
+                        <div class="p-person">
+                            <div class="p-person__icon">
+                                <img src="img/svg/icon.svg" alt="">
+                            </div>
+                            <div class="p-person__txt">
+                                Антон Знаменский
+                            </div>
+                        </div>
+                        <div class="p-person__links">
+                            <a href="#" class="person-ring"></a>
+                            <a href="#" class="person-settings"></a>
+                        </div>
+                    </div>
+                    <div class="page-header__view">
+                        <div class="page-header__info">
+                            Личный кабинет
+                        </div>
+                        <div class="page-header__img">
+                            <img src="img/content/head-logo.png" alt="">
+                        </div>
+                    </div>
+        		</div>
+        	</div>
+        </header>
+        <main class="page-content">
+            <div class="container">
+                <div class="personal">
+                    <div class="personal__view">
+                        <div class="personal__aside">
+                            <div class="personal__list">
+                                <div class="personal__item"><a href="#">Личные данные</a></div>
+                                <div class="personal__item"><a href="#">Дисконтная карта
+                                    </a></div>
+                                <div class="personal__item"><a href="#">Рекламная игра</a></div>
+                                <div class="personal__item"><a href="#">Социальная программа
+                                    </a></div>
+                                <div class="personal__item active"><a href="#">Адреса</a></div>
+                                <div class="personal__item"><a href="#">История покупок</a></div>
+                                <div class="personal__item"><a href="#">Изменить пароль
+                                    </a></div>
+                            </div>
+                            <div class="back-wrap">
+                                <a href="#" class="personal-back">Вернуться в магазин</a>
+                            </div>
+                        </div>
+                        <div class="personal__data">
+                            <div class="personal__wrap">
+                                <div class="personal-info">
+                                    <a href="#" class="btn popup-trigger"
+                                    data-popup-trigger="one">Попап 1</a><br><br>
+                                    
+                                    <a href="#" class="btn popup-trigger"
+                                    data-popup-trigger="two">Попап 2</a><br><br>
+
+                                    <a href="#" class="btn popup-trigger"
+                                    data-popup-trigger="three">Попап 3</a><br><br>
+
+                                    <a href="#" class="btn popup-trigger"
+                                    data-popup-trigger="four">Попап 4</a><br><br>
+
+
+                                    <a href="#" class="btn popup-trigger"
+                                    data-popup-trigger="five">Попап 5</a><br><br>
+
+                                    <a href="#" class="btn popup-trigger"
+                                    data-popup-trigger="six">Попап 6</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        2021 &copy; Интернет-магазин "Остров чистоты и вкуса". ЧТУП «ЗападХимТорг», УНП 590828925.<br>
+                        Государственная регистрация: Гродненский областной исполнительный комитет от 16.01.2008г
+                        №590828925.<br>
+                        231335, Гродненская обл., Ивьевский р-н, аг. Липнишки, ул. Виленская, д. 12А, корп. 1, комн. 6
+
+                        Регистрационный номер в Торговом реестре Республики Беларусь 494498 от 21.10.2020
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div><!-- END LAYOUT-->
+    <!-- Modals -->
+    <div class="body-blackout"></div>
+    <div class="popup-modal" data-popup-modal="one">
+        <i class="popup-modal__close"></i>
+        <h1>Вы точно хотите отказаться?</h1>
+        <div class="popup-msg">
+            Тогда ваша дисконтная карта будет удалена и вы не сможете участвовать в рекламной игре
+        </div>
+        <a href="#" class="btn">Отказаться</a>
+        <div class="recover__back">
+            <a href="#">Отмена</a>
+        </div>
+    </div>
+
+    <div class="popup-modal" data-popup-modal="two">
+        <i class="popup-modal__close"></i>
+        <h1>Потеряли дисконтную карту?</h1>
+        <div class="popup-msg">
+            Укажите свой номер телефона, мы посмотрим карту по базе
+        </div>
+        <div class="recover-form">
+            <form action="#" method="post">
+                <div class="popup-phone">
+                    <div class="page-form__item m-error">
+                        <label class="page-form__label">
+                            Мобильный телефон
+                        </label>
+                        <div class="page-form__in">
+                            <input type="tel" id="phone__ind" placeholder="+375 (__) ___-__-__">
+                            <span class="error-message">Неверный пароль</span>
+                        </div>
+                    </div>
+                    <input type="submit" value="Проверить" class="page-form__submit">
+                </div>
+                <div class="recover__back">
+                    <a href="#">Отмена</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup-modal" data-popup-modal="three">
+        <i class="popup-modal__close"></i>
+        <h1>Номер вашей карты</h1>
+        <div class="popup-card">
+            3124123
+        </div>
+        <div class="recover__back">
+            <a href="#">Хорошо, спасибо</a>
+        </div>
+    </div>
+
+    <div class="popup-modal" data-popup-modal="four">
+        <i class="popup-modal__close"></i>
+        <h1>Потеряли дисконтную карту?</h1>
+        <div class="popup-msg">
+            Укажите свой номер телефона, мы посмотрим карту по базе
+        </div>
+        <div class="recover-form">
+            <form action="#" method="post">
+                <div class="popup-phone">
+                    <div class="page-form__item m-error">
+                        <label class="page-form__label">
+                            Мобильный телефон
+                        </label>
+                        <div class="page-form__in">
+                            <input type="tel" id="phone__entity" placeholder="+375 (__) ___-__-__">
+                            <span class="error-message">К данному профилю карта не привязана</span>
+                        </div>
+                    </div>
+                    <input type="submit" value="Проверить" class="page-form__submit">
+                </div>
+                <div class="recover__back">
+                    <a href="#">Отмена</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="popup-modal m-address" data-popup-modal="five">
+        <i class="popup-modal__close"></i>
+        <h1>Выберите свой адрес</h1>
+        <div class="address-top">
+            Адрес поможет предоставить актуальную информацию о наличии товара и условиях доставки в вашем городе.
+        </div>
+        <div class="tabs">
+            <ul class="tabs__nav">
+                <li class="tabs__item active">
+                    <a href="#kur" class="tabs__link">Курьером</a>
+                </li>
+                <li class="tabs__item">
+                    <a href="#sam" class="tabs__link">Самовывоз</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="kur" class="tab-pane active"> 
+                    <form action="" method="post">
+                        <div class="p-address-view">
+                            <div class="p-address-view__item">
+                                <div class="radio-item">
+                                    <input type="radio" id="radio11" name="vv" checked="">
+                                    <label for="radio11">
+                                        г. Минск, ул. Матусевича, дом 34, корп -, кв. 3, подъезд 1, этаж 12, квартира 34
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="p-address-view__item">
+                                <div class="radio-item">
+                                    <input type="radio" id="radio12" name="vv">
+                                    <label for="radio12">
+                                        г. Минск, ул. Сергея Есенина, дом 95, корп -, кв. 3, подъезд 1, этаж 12, квартира 34
+                                    </label>
+                                </div>
+                                <a href="#" class="p-address__close"></a>
+                            </div>
+                        </div>
+                        <a href="#" class="address-add">Добавить адрес</a>
+                        <input type="submit" value="ПОДТВЕРДИТЬ АДРЕС" class="page-form__submit">
+                    </form>
+                </div>
+                <div id="sam" class="tab-pane"> 
+                    <form action="" method="post">
+                        <div class="p-address-view">
+                            <div class="p-address-view__item">
+                                <div class="radio-item">
+                                    <input type="radio" id="radio125" name="vv2">
+                                    <label for="radio125">
+                                        Test1
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="p-address-view__item">
+                                <div class="radio-item">
+                                    <input type="radio" id="radio115" name="vv2" checked="">
+                                    <label for="radio115">
+                                        Test 234
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="p-address-view__item">
+                                <div class="radio-item">
+                                    <input type="radio" id="radio118" name="vv2">
+                                    <label for="radio118">
+                                        Test 234 test test
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" value="ПОДТВЕРДИТЬ АДРЕС" class="page-form__submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-modal m-address" data-popup-modal="six">
+        <i class="popup-modal__close"></i>
+        <h1>Добавить новый адрес</h1>
+        <div class="address-top">
+            Необходимо заполнить все поля
+        </div>
+        <div class="map-view">
+            <img src="img/content/map.jpg" alt="">
+        </div>
+        <div class="address-form">
+            <form action="" method="post">
+                <div class="address-form__item">
+                    <div class="page-form__item">
+                        <label class="page-form__label">
+                            Область (обл. центр)
+                        </label>
+                        <div class="page-form__in">
+                            <select>
+                                <option value="" disabled="" selected="">Выберите область</option>
+                                <option>Область 1</option>
+                                <option>Область 2</option>
+                                <option>Область 3</option>
+                                <option>Область 4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="page-form__item">
+                        <label class="page-form__label">
+                            Район (район. центр)
+                        </label>
+                        <div class="page-form__in">
+                            <select>
+                                <option value="" disabled="" selected="">Выберите райцентр</option>
+                                <option>райцентр 1</option>
+                                <option>райцентр 2</option>
+                                <option>райцентр 3</option>
+                                <option>райцентр 4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="page-form__item">
+                        <label class="page-form__label">
+                            Населенный пункт
+                        </label>
+                        <div class="page-form__in">
+                            <select>
+                                <!-- <option value="" disabled selected>Выберите область</option> -->
+                                <option>Минск</option>
+                                <option>Брест</option>
+                                <option>Витебск</option>
+                                <option>Гродно</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="page-form__item">
+                        <label class="page-form__label">
+                            Улица
+                        </label>
+                        <div class="page-form__in">
+                            <select>
+                                <!-- <option value="" disabled selected>Выберите улицу</option> -->
+                                <option>Ул. Корженевского</option>
+                                <option>Улица 2</option>
+                                <option>Улица 3</option>
+                                <option>Улица 4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="page-form__item">
+                        <label class="page-form__label">
+                            Номер дома
+                        </label>
+                        <div class="page-form__in">
+                            <div class="house-split">
+                                <div class="house-split__item"><input type="text" placeholder="Дом"></div>
+                                <div class="house-split__item"><input type="text" placeholder="Корпус"></div>
+                                <div class="house-split__item"><input type="text" placeholder="Подъезд"></div>
+                                <div class="house-split__item"><input type="text" placeholder="Этаж"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="house-split__add">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="private1" name="private">
+                            <label for="private1">
+                                Частный дом
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="page-form__item">
+                        <label class="page-form__label">
+                            Квартира
+                        </label>
+                        <div class="page-form__in">
+                            <input type="text" placeholder="Введите номер квартиры">
+                        </div>
+                    </div>
+                    <div class="address-form-more">
+                        <div class="address-form-more__top">
+                            Укажите данные получателя заказа, если они отличются от ваших
+                        </div>
+                        <div class="address-form-double">
+                            <div class="address-form-double__item">
+                                <input type="text" placeholder="Имя">
+                            </div>
+                            <div class="address-form-double__item">
+                                <input type="text" placeholder="Телефон">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="ПОДТВЕРДИТЬ АДРЕС" class="page-form__submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/libs/libs.js"></script>
+    <script src="js/interface.js"></script>
+</body>
+
+</html>

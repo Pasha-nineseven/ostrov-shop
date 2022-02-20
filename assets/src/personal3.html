@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    //= template/head.html
+</head>
+
+<body>
+    <!--LAYOUT-->
+    <div class="layout">
+        //= template/header-personal.html
+        <main class="page-content">
+            <div class="container">
+                <div class="personal">
+                    <div class="personal__view">
+                        <div class="personal__aside">
+                            <div class="personal__list">
+                                <div class="personal__item"><a href="#">Личные данные</a></div>
+                                <div class="personal__item active"><a href="#">Дисконтная карта
+                                    </a></div>
+                                <div class="personal__item"><a href="#">Рекламная игра</a></div>
+                                <div class="personal__item"><a href="#">Социальная программа
+                                    </a></div>
+                                <div class="personal__item"><a href="#">Адреса</a></div>
+                                <div class="personal__item"><a href="#">История покупок</a></div>
+                                <div class="personal__item"><a href="#">Изменить пароль
+                                    </a></div>
+                            </div>
+                            <div class="back-wrap">
+                                <a href="#" class="personal-back">Вернуться в магазин</a>
+                            </div>
+                        </div>
+                        <div class="personal__data">
+                            <div class="personal__wrap">
+                                <div class="personal-info">
+                                    <div class="personal-info__view">
+                                        <div class="reg-view">
+                                            <h1>Добавьте карту</h1>
+                                            <form action="#" method="post">
+                                                <div class="card-personal">
+                                                    <div class="page-form__item">
+                                                        <label for="p_num2" class="page-form__label">
+                                                            Номер единой дисконтной карты:
+                                                        </label>
+                                                        <div class="page-form__in">
+                                                            <input type="text" id="p_num2" value="4123154123">
+                                                            <div class="page-explanation">
+                                                                <span class="page-explanation__link">Где найти
+                                                                    номер?</span>
+                                                                <div class="page-explanation__view">
+                                                                    <img src="img/content/number.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="page-form__item">
+                                                        <label for="p_patronymic" class="page-form__label">
+                                                            Ваше отчество:
+                                                        </label>
+                                                        <div class="page-form__in">
+                                                            <input type="text" id="p_patronymic">
+                                                        </div>
+                                                    </div>
+                                                    <div class="page-form__item">
+                                                        <label for="p_date" class="page-form__label">
+                                                            Дата рождения
+                                                            <div class="label-clarification">
+                                                                Именинник получает дополнительные скидки
+                                                            </div>
+                                                        </label>
+                                                        <div class="page-form__in">
+                                                            <input type="text" id="p_date" value="22.10.1985"
+                                                                name="input__date">
+                                                        </div>
+                                                    </div>
+                                                    <div class="page-form__item">
+                                                        <div class="checkbox-item">
+                                                            <input type="checkbox" id="agree2" name="agree2">
+                                                            <label for="agree2">
+                                                                Настоящим подтверждаю, что ознакомлен(а) с <a
+                                                                    href="#">Правилами бонусной программы</a> и
+                                                                корректно ввел(а) данные.
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="page-form__item">
+                                                        <div class="checkbox-item">
+                                                            <input type="checkbox" id="agree3" name="agree3">
+                                                            <label for="agree3">
+                                                                Я даю согласие на обработку своих персональных данных в
+                                                                соответствии с <a href="#">Политикой в отношении
+                                                                    обработки персональных данных</a>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="btn popup-trigger"
+                                                        data-popup-trigger="one">Добавить карту</a>
+                                                </div>
+                                            </form>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        2021 &copy; Интернет-магазин "Остров чистоты и вкуса". ЧТУП «ЗападХимТорг», УНП 590828925.<br>
+                        Государственная регистрация: Гродненский областной исполнительный комитет от 16.01.2008г
+                        №590828925.<br>
+                        231335, Гродненская обл., Ивьевский р-н, аг. Липнишки, ул. Виленская, д. 12А, корп. 1, комн. 6
+
+                        Регистрационный номер в Торговом реестре Республики Беларусь 494498 от 21.10.2020
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div><!-- END LAYOUT-->
+    <!-- Modals -->
+    <div class="body-blackout"></div>
+    <div class="popup-modal" data-popup-modal="one">
+        <i class="popup-modal__close"></i>
+        <p>
+            Для участия в рекламной игре, необходимо добавить дисконтную карту.
+        </p>
+        <a href="#" class="btn">Добавить</a>
+    </div>
+    <script src="js/libs/libs.js"></script>
+    <script src="js/interface.js"></script>
+</body>
+
+</html>

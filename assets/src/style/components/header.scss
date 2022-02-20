@@ -1,3 +1,73 @@
 .page-header{
+    padding: 12px 0 16px;
+    color: #92BBD9;
+    &.m-personal{
+        .page-header__wrap{
+            justify-content: space-between;
+        }
+    }
+}
 
+.page-header__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-header__info{
+    font-size: 28px;
+    line-height: 34px;
+    margin-right: 17px;
+    font-weight: 200;
+}
+.page-header__img{
+    img{
+        display: block;
+    }
+}
+
+.page-header__view{
+    display: flex;
+    align-items: center;
+}
+
+.page-header__person{
+    display: flex;
+    align-items: center;
+}
+
+.p-person{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.p-person__icon{
+    margin-right: 4px;
+    img{
+        display: block;
+    }
+}
+.p-person__txt{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.p-person__links{
+    display: flex;
+    align-items: center;
+}
+
+.person-ring{
+    display: inline-block;
+    width: 22px;
+    height: 27px;
+    background: url(../img/svg/ring.svg) center no-repeat;
+    margin-right: 20px;
+}
+.person-settings{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/svg/sett.svg) center no-repeat;
 }

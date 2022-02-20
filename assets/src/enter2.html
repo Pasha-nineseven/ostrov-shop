@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout">
+        //= template/header.html
+		<main class="page-content">
+			<div class="container">
+                <div class="enter-view">
+                    <div class="enter-view__in">
+                        <h1 class="m-center">Восстановление пароля</h1>
+                        <div class="recover">
+                            <div class="recover__msg">
+                                Для смены пароля, введите код подтверждения из SMS-сообщения на номер
+                                <strong>+375 (29) 327-81-46</strong>
+                            </div>
+                            <div class="recover-form">
+                                <form action="#" method="post">
+                                    <div class="page-form__item m-code">
+                                        <label for="code" class="page-form__label">
+                                            Код подтверждения <span>*</span>
+                                        </label>
+                                        <div class="page-form__in">
+                                            <input type="text" id="code" value="5463">
+                                        </div>
+                                        <div class="code-again">
+                                            Отправить код заново <span class="code-again__time">(<span>5с</span>)</span>
+                                        </div>
+                                    </div>
+                                    <div class="page-form__item">
+                                        <label for="password__recover" class="page-form__label">
+                                            Новый пароль
+                                        </label>
+                                        <div class="page-form__in">
+                                            <input type="password" id="password__recover">
+                                            <a href="#" class="password-toggle" data-show-password="#password__recover"></a>
+                                        </div>
+                                        <div class="generate-wrap">
+                                            <a href="#">Сгенерировать надежный пароль</a>
+                                        </div>
+                                    </div>
+                                    <input type="submit" value="Сохранить новый пароль" class="page-form__submit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        2021 &copy; Интернет-магазин "Остров чистоты и вкуса". ЧТУП «ЗападХимТорг», УНП 590828925.<br>
+                        Государственная регистрация: Гродненский областной исполнительный комитет от 16.01.2008г №590828925.<br>
+                        231335, Гродненская обл., Ивьевский р-н, аг. Липнишки, ул. Виленская, д. 12А, корп. 1, комн. 6
+
+                        Регистрационный номер в Торговом реестре Республики Беларусь 494498 от 21.10.2020
+                    </div>
+                </div>	
+			</div>
+		</main>
+	</div><!-- END LAYOUT-->
+	<script src="js/libs/libs.js"></script>
+	<script src="js/interface.js"></script>
+</body>
+</html>

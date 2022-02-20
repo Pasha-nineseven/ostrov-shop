@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout">
+        //= template/header-personal.html
+		<main class="page-content">
+			<div class="container">
+                <div class="personal">
+                    <div class="personal__view">
+                        <div class="personal__aside">
+                            <div class="personal__list">
+                                <div class="personal__item"><a href="#">Личные данные</a></div>
+                                <div class="personal__item active"><a href="#">Дисконтная карта
+                                </a></div>
+                                <div class="personal__item"><a href="#">Рекламная игра</a></div>
+                                <div class="personal__item"><a href="#">Социальная программа
+                                </a></div>
+                                <div class="personal__item"><a href="#">Адреса</a></div>
+                                <div class="personal__item"><a href="#">История покупок</a></div>
+                                <div class="personal__item"><a href="#">Изменить пароль
+                                </a></div>
+                            </div>
+                            <div class="back-wrap">
+                                <a href="#" class="personal-back">Вернуться в магазин</a>
+                            </div>
+                        </div>
+                        <div class="personal__data">
+                            <div class="discont">
+                                <div class="discont-top">
+                                    <div class="discont-top__wrap">
+                                        <div class="discont-top__img">
+                                            <img src="img/content/card.jpg" alt="">
+                                        </div>
+                                        <div class="discont-top__info">
+                                            <div class="discont-top__title">Номер карты</div>
+                                            <div class="discont-top__num">3124123</div>
+                                            <div class="discont-top__status">Статус: Только начисление</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bonus">
+                                    <div class="bonus__title">Бонусы в феврале</div>
+                                    <div class="bonus__list">
+                                        <div class="bonus__item">
+                                            <div class="bonus__in">
+                                                <div class="bonus__top">Баланс бонусного счета</div>
+                                                <div class="bonus__count">
+                                                    5125 баллов
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="bonus__add">1 бонус = 1 копейка</div>
+                                        </div>
+                                        <div class="bonus__item">
+                                            <div class="bonus__in">
+                                                <div class="bonus__top">Использовано</div>
+                                                <div class="bonus__count">
+                                                    125 баллов
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bonus__item">
+                                            <div class="bonus__in">
+                                                <div class="bonus__top">Вы сэкономили</div>
+                                                <div class="bonus__count">
+                                                    1,25 руб
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bonus__item">
+                                            <div class="bonus__in">
+                                                <a href="#" class="bonus-rules">
+                                                    Правила бонусной программы
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="agree43" name="agree3">
+                                        <label for="agree43">
+                                            Настоящим подтверждаю, что согласен на участие в <a href="#">бонусной программе</a> и рекламной игре 
+                                        </label>
+                                    </div>
+                                    <div class="bonus-links">
+                                        <a href="#" class="discont-change">Сменить дисконтную карту
+                                        </a>
+                                        <a href="#" class="discont-lost">Я потерял дисконтную карту</a>
+                                    </div>
+                                </div>
+
+                                <div class="accordeon">
+                                    <div class="accordeon__title">
+                                        История начисления баллов
+                                    </div>
+                                    <div class="accordeon-wrap">
+                                        <div class="accordeon-scroll">
+                                            <div class="accordeon-pre">
+                                                <div class="accordeon-pre__item">Месяц</div>
+                                                <div class="accordeon-pre__item">Использовано</div>
+                                                <div class="accordeon-pre__item">Вы сэкономили</div>
+                                                <div class="accordeon-pre__item"></div>
+                                            </div>
+                                            <div class="accordeon__item">
+                                                <div class="accordeon__details">
+                                                    <div class="details-item">Январь</div>
+                                                    <div class="details-item">124 баллов</div>
+                                                    <div class="details-item">1,24 коп.</div>
+                                                    <div class="details-item">
+                                                        <a href="#content-1" class="accordeon__toggle">Детали</a>
+                                                    </div>
+                                                </div>
+                                                <div class="accordeon__content" id="content-1">
+                                                    <div class="accordeon-data">
+                                                        <div class="accordeon-data-top">
+                                                            <div class="accordeon-data-top__item">Дата</div>
+                                                            <div class="accordeon-data-top__item">Начислено</div>
+                                                            <div class="accordeon-data-top__item">Списано</div>
+                                                            <div class="accordeon-data-top__item">Экономия</div>
+                                                            <div class="accordeon-data-top__item">Магазин</div>
+                                                        </div>
+                                                        <div class="accordeon-data__list">
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">01.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">0 баллов</div>
+                                                                <div class="accordeon-data__pos">0 руб.</div>
+                                                                <div class="accordeon-data__pos">д. Боровая</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">03.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">12 баллов</div>
+                                                                <div class="accordeon-data__pos">0,12 руб.</div>
+                                                                <div class="accordeon-data__pos">Есенина 6</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">12.12.2021</div>
+                                                                <div class="accordeon-data__pos">3,44 баллов</div>
+                                                                <div class="accordeon-data__pos">152 балла</div>
+                                                                <div class="accordeon-data__pos">1,52 руб.</div>
+                                                                <div class="accordeon-data__pos">Есенина 6</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">01.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">0 баллов</div>
+                                                                <div class="accordeon-data__pos">0 руб.</div>
+                                                                <div class="accordeon-data__pos">д. Боровая</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">27.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">12 баллов</div>
+                                                                <div class="accordeon-data__pos">0 руб.</div>
+                                                                <div class="accordeon-data__pos">д. Боровая</div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordeon__item">
+                                                <div class="accordeon__details">
+                                                    <div class="details-item">Февраль</div>
+                                                    <div class="details-item">124 баллов</div>
+                                                    <div class="details-item">1,24 коп.</div>
+                                                    <div class="details-item">
+                                                        <a href="#content-2" class="accordeon__toggle">Детали</a>
+                                                    </div>
+                                                </div>
+                                                <div class="accordeon__content" id="content-2">
+                                                    <div class="accordeon-data">
+                                                        <div class="accordeon-data-top">
+                                                            <div class="accordeon-data-top__item">Дата</div>
+                                                            <div class="accordeon-data-top__item">Начислено</div>
+                                                            <div class="accordeon-data-top__item">Списано</div>
+                                                            <div class="accordeon-data-top__item">Экономия</div>
+                                                            <div class="accordeon-data-top__item">Магазин</div>
+                                                        </div>
+                                                        <div class="accordeon-data__list">
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">01.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">0 баллов</div>
+                                                                <div class="accordeon-data__pos">0 руб.</div>
+                                                                <div class="accordeon-data__pos">д. Боровая</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">03.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">12 баллов</div>
+                                                                <div class="accordeon-data__pos">0,12 руб.</div>
+                                                                <div class="accordeon-data__pos">Есенина 6</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">12.12.2021</div>
+                                                                <div class="accordeon-data__pos">3,44 баллов</div>
+                                                                <div class="accordeon-data__pos">152 балла</div>
+                                                                <div class="accordeon-data__pos">1,52 руб.</div>
+                                                                <div class="accordeon-data__pos">Есенина 6</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">01.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">0 баллов</div>
+                                                                <div class="accordeon-data__pos">0 руб.</div>
+                                                                <div class="accordeon-data__pos">д. Боровая</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">27.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">12 баллов</div>
+                                                                <div class="accordeon-data__pos">0 руб.</div>
+                                                                <div class="accordeon-data__pos">д. Боровая</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordeon__item">
+                                                <div class="accordeon__details">
+                                                    <div class="details-item">Март</div>
+                                                    <div class="details-item">124 баллов</div>
+                                                    <div class="details-item">1,24 коп.</div>
+                                                    <div class="details-item">
+                                                        <a href="#content-3" class="accordeon__toggle">Детали</a>
+                                                    </div>
+                                                </div>
+                                                <div class="accordeon__content" id="content-3">
+                                                    <div class="accordeon-data">
+                                                        <div class="accordeon-data-top">
+                                                            <div class="accordeon-data-top__item">Дата</div>
+                                                            <div class="accordeon-data-top__item">Начислено</div>
+                                                            <div class="accordeon-data-top__item">Списано</div>
+                                                            <div class="accordeon-data-top__item">Экономия</div>
+                                                            <div class="accordeon-data-top__item">Магазин</div>
+                                                        </div>
+                                                        <div class="accordeon-data__list">
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">01.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">0 баллов</div>
+                                                                <div class="accordeon-data__pos">0 руб.</div>
+                                                                <div class="accordeon-data__pos">д. Боровая</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">03.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">12 баллов</div>
+                                                                <div class="accordeon-data__pos">0,12 руб.</div>
+                                                                <div class="accordeon-data__pos">Есенина 6</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">12.12.2021</div>
+                                                                <div class="accordeon-data__pos">3,44 баллов</div>
+                                                                <div class="accordeon-data__pos">152 балла</div>
+                                                                <div class="accordeon-data__pos">1,52 руб.</div>
+                                                                <div class="accordeon-data__pos">Есенина 6</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">01.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">0 баллов</div>
+                                                                <div class="accordeon-data__pos">0 руб.</div>
+                                                                <div class="accordeon-data__pos">д. Боровая</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">27.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">12 баллов</div>
+                                                                <div class="accordeon-data__pos">0 руб.</div>
+                                                                <div class="accordeon-data__pos">д. Боровая</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordeon__item">
+                                                <div class="accordeon__details">
+                                                    <div class="details-item">Апрель</div>
+                                                    <div class="details-item">124 баллов</div>
+                                                    <div class="details-item">1,24 коп.</div>
+                                                    <div class="details-item">
+                                                        <a href="#content-4" class="accordeon__toggle">Детали</a>
+                                                    </div>
+                                                </div>
+                                                <div class="accordeon__content" id="content-4">
+                                                    <div class="accordeon-data">
+                                                        <div class="accordeon-data-top">
+                                                            <div class="accordeon-data-top__item">Дата</div>
+                                                            <div class="accordeon-data-top__item">Начислено</div>
+                                                            <div class="accordeon-data-top__item">Списано</div>
+                                                            <div class="accordeon-data-top__item">Экономия</div>
+                                                            <div class="accordeon-data-top__item">Магазин</div>
+                                                        </div>
+                                                        <div class="accordeon-data__list">
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">01.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">0 баллов</div>
+                                                                <div class="accordeon-data__pos">0 руб.</div>
+                                                                <div class="accordeon-data__pos">д. Боровая</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">03.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">12 баллов</div>
+                                                                <div class="accordeon-data__pos">0,12 руб.</div>
+                                                                <div class="accordeon-data__pos">Есенина 6</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">12.12.2021</div>
+                                                                <div class="accordeon-data__pos">3,44 баллов</div>
+                                                                <div class="accordeon-data__pos">152 балла</div>
+                                                                <div class="accordeon-data__pos">1,52 руб.</div>
+                                                                <div class="accordeon-data__pos">Есенина 6</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">01.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">0 баллов</div>
+                                                                <div class="accordeon-data__pos">0 руб.</div>
+                                                                <div class="accordeon-data__pos">д. Боровая</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">27.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">12 баллов</div>
+                                                                <div class="accordeon-data__pos">0 руб.</div>
+                                                                <div class="accordeon-data__pos">д. Боровая</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordeon__item">
+                                                <div class="accordeon__details">
+                                                    <div class="details-item">Май</div>
+                                                    <div class="details-item">124 баллов</div>
+                                                    <div class="details-item">1,24 коп.</div>
+                                                    <div class="details-item">
+                                                        <a href="#content-5" class="accordeon__toggle">Детали</a>
+                                                    </div>
+                                                </div>
+                                                <div class="accordeon__content" id="content-5">
+                                                    <div class="accordeon-data">
+                                                        <div class="accordeon-data-top">
+                                                            <div class="accordeon-data-top__item">Дата</div>
+                                                            <div class="accordeon-data-top__item">Начислено</div>
+                                                            <div class="accordeon-data-top__item">Списано</div>
+                                                            <div class="accordeon-data-top__item">Экономия</div>
+                                                            <div class="accordeon-data-top__item">Магазин</div>
+                                                        </div>
+                                                        <div class="accordeon-data__list">
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">01.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">0 баллов</div>
+                                                                <div class="accordeon-data__pos">0 руб.</div>
+                                                                <div class="accordeon-data__pos">д. Боровая</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">03.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">12 баллов</div>
+                                                                <div class="accordeon-data__pos">0,12 руб.</div>
+                                                                <div class="accordeon-data__pos">Есенина 6</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">12.12.2021</div>
+                                                                <div class="accordeon-data__pos">3,44 баллов</div>
+                                                                <div class="accordeon-data__pos">152 балла</div>
+                                                                <div class="accordeon-data__pos">1,52 руб.</div>
+                                                                <div class="accordeon-data__pos">Есенина 6</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">01.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">0 баллов</div>
+                                                                <div class="accordeon-data__pos">0 руб.</div>
+                                                                <div class="accordeon-data__pos">д. Боровая</div>
+                                                            </div>
+                                                            <div class="accordeon-data__item">
+                                                                <div class="accordeon-data__pos">27.12.2021</div>
+                                                                <div class="accordeon-data__pos">5,56 баллов</div>
+                                                                <div class="accordeon-data__pos">12 баллов</div>
+                                                                <div class="accordeon-data__pos">0 руб.</div>
+                                                                <div class="accordeon-data__pos">д. Боровая</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        2021 &copy; Интернет-магазин "Остров чистоты и вкуса". ЧТУП «ЗападХимТорг», УНП 590828925.<br>
+                        Государственная регистрация: Гродненский областной исполнительный комитет от 16.01.2008г №590828925.<br>
+                        231335, Гродненская обл., Ивьевский р-н, аг. Липнишки, ул. Виленская, д. 12А, корп. 1, комн. 6
+
+                        Регистрационный номер в Торговом реестре Республики Беларусь 494498 от 21.10.2020
+                    </div>
+                </div>	
+			</div>
+		</main>
+	</div><!-- END LAYOUT-->
+	<script src="js/libs/libs.js"></script>
+	<script src="js/interface.js"></script>
+</body>
+</html>
