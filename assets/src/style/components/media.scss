@@ -193,12 +193,13 @@
         .page-header__view{
             flex-wrap:wrap;
             justify-content: flex-end;
+            width: 50%;
         }
-        .page-header__info{
-            width: 100%;
-            margin-right: 0;
-            text-align: right;
-        }
+        // .page-header__info{
+        //     width: 100%;
+        //     margin-right: 0;
+        //     text-align: right;
+        // }
     }
     .p-person__txt{
         font-size: 16px;
@@ -289,10 +290,23 @@
     .page-header.m-personal .page-header__view {
         justify-content: flex-start;
         order:1;
-        margin-bottom: 20px;
     }
     .page-header__person{
-        order:2;
+        order: 2;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 50%;
+        padding-top: 3px;
+        .p-person {
+            margin-right: 0;
+            width: 100%;
+            flex-direction: row-reverse;
+            margin-bottom: 12px;
+        }
+        .p-person__icon {
+            margin-right: 0;
+            margin-left: 5px;
+        }
     }
     .page-header.m-personal .page-header__info{
         text-align: left;
@@ -336,6 +350,19 @@
     .address-accordeon__toggle {
         right: 20px;
         top: 25px;
+    }
+    .page-header__img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .page-header.m-personal{
+        .page-header__img{
+            width: auto;
+        }
+    }
+    .page-header.m-personal .page-header__wrap{
+        align-items: flex-start;
     }
 }
 
@@ -477,5 +504,27 @@
     .discont-lost{
         width: 100%;
         justify-content: center;
+    }
+    .page-header.m-personal .page-header__view{
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .page-header.m-personal .page-header__info{
+        text-align: center;
+    }
+    .page-header__person {
+        justify-content: center;
+        width: 100%;
+    }
+    .page-header__person .p-person {
+        width: 100%;
+        flex-direction: row;
+        margin-bottom: 8px;
+        justify-content: center;
+    }
+    .page-header__person .p-person__icon {
+        margin-right: 5px;
+        margin-left: 0;
     }
 }

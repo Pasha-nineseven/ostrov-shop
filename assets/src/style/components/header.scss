@@ -3,7 +3,13 @@
     color: #92BBD9;
     &.m-personal{
         .page-header__wrap{
-            justify-content: space-between;
+            // justify-content: space-between;
+            max-width: 100%;
+        }
+    }
+    &.m-reg{
+        .page-header__wrap{
+            max-width: 856px;
         }
     }
 }
@@ -11,18 +17,21 @@
 .page-header__wrap{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 617px;
+    margin: 0 auto;
 }
 
 .page-header__info{
     font-size: 28px;
     line-height: 34px;
     margin-right: 17px;
-    font-weight: 200;
+    font-weight: 400;
 }
 .page-header__img{
     img{
         display: block;
+        max-width: 100%;
     }
 }
 
@@ -42,7 +51,7 @@
     margin-right: 30px;
 }
 .p-person__icon{
-    margin-right: 4px;
+    margin-right: 10px;
     img{
         display: block;
     }

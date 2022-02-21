@@ -1,12 +1,9 @@
-
-
-
-
 window.addEventListener('load', () => {
 	const tabs = document.querySelector('.tabs');
 	const tabsLink = document.querySelectorAll(".tabs__item");
 	const phone__ind = document.getElementById('phone__ind');
 	const phone__entity = document.getElementById('phone__entity');
+	const old__card = document.getElementById('old__card');
 
 	document.addEventListener('click', function (event) {
 		if (!event.target.hasAttribute('data-show-password')) return;
@@ -48,7 +45,7 @@ window.addEventListener('load', () => {
 		}
 	}
 
-	//Phone
+	//Phone-mask
 	if (typeof (phone__ind) != 'undefined' && phone__ind != null) {
 		var phoneMask = IMask(
 			document.getElementById('phone__ind'), {
@@ -57,11 +54,21 @@ window.addEventListener('load', () => {
 		}
 		);
 	}
-	//Phone2
+	//Phone2-mask
 	if (typeof (phone__entity) != 'undefined' && phone__entity != null) {
 		var phoneMaskEnt = IMask(
 			document.getElementById('phone__entity'), {
 			mask: '+{375} (00) 000-00-00',
+			lazy: false,
+		}
+		);
+	}
+
+	//old-card-MASK
+	if (typeof (old__card) != 'undefined' && old__card != null) {
+		var cardMaskEnt = IMask(
+			document.getElementById('old__card'), {
+			mask: '0 0 0 0 0 0 0',
 			lazy: false,
 		}
 		);
@@ -151,10 +158,33 @@ window.addEventListener('load', () => {
         $(this).parents('.address-accordeon__item').toggleClass('active');
         $(this).parents('.address-accordeon__item').find('.address-accordeon__info').slideToggle(10);
     });
+
+	if ($('#contacts_map').length>0) {
+        ymaps.ready(initializeContacts);
+    };
 });
 
 
 // functions
 
+function initializeContacts() {
+	var myMap = new ymaps.Map("contacts_map", {
+		center:[53.879888,27.586757],
+		zoom: 13,
+		controls: []
+	}, {
+		suppressMapOpenBlock: true
+	}); 
+			
+	var myPlacemark = new ymaps.Placemark([53.879888,27.586757],{
+			// balloonContentBody: 'Адрес',
+		},{
+		iconLayout: 'default#image',
+	}); 
 
+	myMap.controls.add(new ymaps.control.ZoomControl({options: { position: { right: 20, top: 50 }}}));
+	myMap.behaviors.disable('scrollZoom');
+
+	myMap.geoObjects.add(myPlacemark);
+}
 
