@@ -106,7 +106,14 @@
                                     data-popup-trigger="five">Попап 5</a><br><br>
 
                                     <a href="#" class="btn popup-trigger"
-                                    data-popup-trigger="six">Попап 6</a>
+                                    data-popup-trigger="six">Попап 6</a><br><br>
+
+
+                                    <a href="#" class="btn popup-trigger"
+                                    data-popup-trigger="1234">Попап 7</a><br><br>
+
+                                    <a href="#" class="btn popup-trigger"
+                                    data-popup-trigger="2222">Попап 8</a><br><br>
                                 </div>
                             </div>
                         </div>
@@ -189,7 +196,7 @@
                             Мобильный телефон
                         </label>
                         <div class="page-form__in">
-                            <input type="tel" id="phone__entity" placeholder="+375 (__) ___-__-__">
+                            <input type="tel" id="phone__rec" placeholder="+375 (__) ___-__-__">
                             <span class="error-message">К данному профилю карта не привязана</span>
                         </div>
                     </div>
@@ -400,6 +407,64 @@
                     <input type="submit" value="ПОДТВЕРДИТЬ АДРЕС" class="page-form__submit">
                 </div>
             </form>
+        </div>
+    </div>
+
+
+
+    <div class="popup-modal" data-popup-modal="1234">
+        <i class="popup-modal__close"></i>
+        <h1>Вход с помощью СМС</h1>
+        <div class="recover">
+            <div class="recover__msg">
+                Введите код подтверждения из SMS-сообщения на номер
+                <strong>+375 (29) 327-81-46</strong>
+            </div>
+            <div class="recover-form">
+                <form action="#" method="post">
+                    <div class="page-form__item m-code">
+                        <label for="code" class="page-form__label">
+                            Код подтверждения <span>*</span>
+                        </label>
+                        <div class="page-form__in">
+                            <input type="text" id="code" value="5463">
+                        </div>
+                        <div class="code-again">
+                            Отправить код заново <span class="code-again__time">(<span>5с</span>)</span>
+                        </div>
+                    </div>
+                    <input type="submit" value="Войти" class="page-form__submit">
+                    <div class="recover__back">
+                        Вспомнили пароль? <a href="#">Вход с помощью пароля</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-modal" data-popup-modal="2222">
+        <i class="popup-modal__close"></i>
+        <h1>Вход с помощью СМС</h1>
+        <div class="recover">
+            <div class="recover__msg">
+                Введите номер телефона, который использовали при регистрации, мы вышлем код
+            </div>
+            <div class="recover-form">
+                <form action="#" method="post">
+                    <div class="page-form__item m-recover">
+                        <label for="code" class="page-form__label">
+                            Номер телефона <span>*</span>
+                        </label>
+                        <div class="page-form__in">
+                            <input type="tel" id="phone__entity" placeholder="+375 (__) ___-__-__">
+                        </div>
+                    </div>
+                    <input type="submit" value="Получить код" class="page-form__submit">
+                    <div class="recover__back">
+                        Вспомнили пароль? <a href="#">Вход с помощью пароля</a>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 

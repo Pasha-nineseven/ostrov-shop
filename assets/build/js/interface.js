@@ -3,6 +3,7 @@ window.addEventListener('load', () => {
 	const tabsLink = document.querySelectorAll(".tabs__item");
 	const phone__ind = document.getElementById('phone__ind');
 	const phone__entity = document.getElementById('phone__entity');
+	const phone__rec = document.getElementById('phone__rec');
 	const old__card = document.getElementById('old__card');
 
 	document.addEventListener('click', function (event) {
@@ -58,6 +59,16 @@ window.addEventListener('load', () => {
 	if (typeof (phone__entity) != 'undefined' && phone__entity != null) {
 		var phoneMaskEnt = IMask(
 			document.getElementById('phone__entity'), {
+			mask: '+{375} (00) 000-00-00',
+			lazy: false,
+		}
+		);
+	}
+
+	//Phone3-mask
+	if (typeof (phone__rec) != 'undefined' && phone__rec != null) {
+		var phoneMaskEnt = IMask(
+			document.getElementById('phone__rec'), {
 			mask: '+{375} (00) 000-00-00',
 			lazy: false,
 		}
@@ -186,4 +197,15 @@ function initializeContacts() {
 	myMap.behaviors.disable('scrollZoom');
 
 	myMap.geoObjects.add(myPlacemark);
+}
+
+
+function ValidateEmail() {
+	var email = document.getElementById("email__entity").value;
+	var lblError = document.getElementById("lblError");
+	lblError.innerHTML = "";
+	var expr = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+	if (!expr.test(email)) {
+		lblError.innerHTML = "Неверный email";
+	}
 }

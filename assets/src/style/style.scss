@@ -191,6 +191,9 @@
 		transform: translateY(-50%) rotate(45deg);
 		border-radius: 2px;
 	}
+	&:empty{
+		display: none;
+	}
 }
 
 
@@ -309,6 +312,12 @@
 				font-size: 34px;
 				text-align: center;
 				padding: 9px 15px;
+			}
+		}
+		&.m-recover{
+			max-width: 360px;
+			.page-form__label{
+				text-align: left;
 			}
 		}
 	}
@@ -543,6 +552,7 @@
 	
 }
 .personal-barcode{
+	max-width: 275px;
 	&__view{
 		background: #F2F6F8;
 		border-radius: 10px;
@@ -563,6 +573,23 @@
 		img{
 			display: block;
 			max-width: 100%;
+		}
+	}
+	.btn{
+		margin-top: 30px;
+		width: 100%;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding-left: 7px;
+    	padding-right: 7px;
+		&:before{
+			content: "";
+			display: inline-block;
+			width: 18px;
+			height: 19px;
+			background: url(../img/svg/change.svg) center no-repeat;
+			margin: 0 8px 0 0;
 		}
 	}
 }
@@ -1745,4 +1772,13 @@ ymaps[class$="-copyright"] {
 			max-width: 100px;
 		}
 	}
+}
+
+.personal-info__edit{
+	display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background: url(../img/svg/edit.svg) center/cover no-repeat;
+    margin-left: 13px;
 }

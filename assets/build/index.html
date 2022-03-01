@@ -110,7 +110,8 @@
 													Электронная почта
 												</label>
 												<div class="page-form__in">
-													<input type="email" id="email__entity" placeholder="mail@domen.com">
+													<input type="email" id="email__entity"  placeholder="mail@domen.com" onkeyup="ValidateEmail();">
+													<span class="error-message" id="lblError"></span>
 												</div>
 											</div>
 											<div class="page-form__item">
