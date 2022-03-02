@@ -80,6 +80,9 @@
 		margin: 0 0 27px 0;
 		padding: 0;
     	list-style-type: none;
+		&.m-center{
+			justify-content: center;
+		}
 	}
 	&__item{
 		margin-right: 10px;

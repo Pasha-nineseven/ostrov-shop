@@ -54,261 +54,308 @@
                         <div class="reg-view__pre">
                             Поля выделенные <strong>жирным</strong> и помеченные <span>*</span> обязательны к заполнению
                         </div>
-                        <form action="" method="post">
-                            <div class="page-form">
-                                <div class="reg-view__item">
-                                    <div class="reg-view__title">Общая информация</div>
-                                    <div class="page-form__item m-required">
-                                        <label for="p_surname" class="page-form__label">
-                                            Фамилия
-                                        </label>
-                                        <div class="page-form__in">
-                                            <input type="text" id="p_surname" placeholder="Введите вашу фамилию">
-                                        </div>
-                                    </div>
-                                    <div class="page-form__item m-required">
-                                        <label for="p_name" class="page-form__label">
-                                            Имя
-                                        </label>
-                                        <div class="page-form__in">
-                                            <input type="text" id="p_name" placeholder="Введите ваше имя">
-                                        </div>
-                                    </div>
-                                    <div class="page-form__item">
-                                        <label for="p_patronymic" class="page-form__label">
-                                            Отчество
-                                            <div class="label-clarification">
-                                                Нужно для участия в рекламной игре
-                                            </div>
-                                        </label>
-                                        <div class="page-form__in">
-                                            <input type="text" id="p_patronymic" placeholder="Введите ваше отчество">
-                                        </div>
-                                    </div>
-                                    <div class="page-form__item m-required">
-                                        <label for="phone__ind" class="page-form__label">
-                                           Мобильный телефон
-                                        </label>
-                                        <div class="page-form__in">
-                                            <input type="tel" id="phone__ind" placeholder="+375 (__) ___-__-__">
-                                        </div>
-                                    </div>
-                                    <div class="page-form__item">
-                                        <label for="p_email" class="page-form__label">
-                                            Эл. почта
-                                        </label>
-                                        <div class="page-form__in">
-                                            <input type="text" id="p_email" placeholder="mail@domen.com">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="reg-view__item">
-                                    <div class="reg-view__title">Для участия в программе лояльности и рекламных мероприятиях</div>
-                                    <div class="page-form__item">
-                                        <label for="p_num1" class="page-form__label">
-                                            Номер единой дисконтной карты
-                                        </label>
-                                        <div class="page-form__in">
-                                            <input type="text" id="p_num1" value="4123154123">
-                                            <div class="page-explanation">
-                                                <span class="page-explanation__link">Где найти номер?</span>
-                                                <div class="page-explanation__view">
-                                                    <img src="img/content/number.png" alt="">
+                        <div class="tabs">
+                            <ul class="tabs__nav m-center">
+                                <li class="tabs__item active">
+                                    <a href="#individual" class="tabs__link">Физическое лицо</a>
+                                </li>
+                                <li class="tabs__item">
+                                    <a href="#entity" class="tabs__link">Юридическое лицо</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="individual" class="tab-pane active"> 
+                                    <form action="" method="post">
+                                        <div class="page-form">
+                                            <div class="reg-view__item">
+                                                <div class="reg-view__title">Общая информация</div>
+                                                <div class="page-form__item m-required">
+                                                    <label for="p_surname" class="page-form__label">
+                                                        Фамилия
+                                                    </label>
+                                                    <div class="page-form__in">
+                                                        <input type="text" id="p_surname" placeholder="Введите вашу фамилию">
+                                                    </div>
+                                                </div>
+                                                <div class="page-form__item m-required">
+                                                    <label for="p_name" class="page-form__label">
+                                                        Имя
+                                                    </label>
+                                                    <div class="page-form__in">
+                                                        <input type="text" id="p_name" placeholder="Введите ваше имя">
+                                                    </div>
+                                                </div>
+                                                <div class="page-form__item">
+                                                    <label for="p_patronymic" class="page-form__label">
+                                                        Отчество
+                                                        <div class="label-clarification">
+                                                            Нужно для участия в рекламной игре
+                                                        </div>
+                                                    </label>
+                                                    <div class="page-form__in">
+                                                        <input type="text" id="p_patronymic" placeholder="Введите ваше отчество">
+                                                    </div>
+                                                </div>
+                                                <div class="page-form__item m-required">
+                                                    <label for="phone__ind" class="page-form__label">
+                                                    Мобильный телефон
+                                                    </label>
+                                                    <div class="page-form__in">
+                                                        <input type="tel" id="phone__ind" placeholder="+375 (__) ___-__-__">
+                                                    </div>
+                                                </div>
+                                                <div class="page-form__item">
+                                                    <label for="p_email" class="page-form__label">
+                                                        Эл. почта
+                                                    </label>
+                                                    <div class="page-form__in">
+                                                        <input type="text" id="p_email" placeholder="mail@domen.com">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="page-form__item">
-                                        <label for="old__card" class="page-form__label">
-                                            Номер старой карты
-                                            <div class="label-clarification">
-                                                Необходим для переноса накопленных бонусов
+
+                                            <div class="reg-view__item">
+                                                <div class="reg-view__title">Для участия в программе лояльности и рекламных мероприятиях</div>
+                                                <div class="page-form__item">
+                                                    <label for="p_num1" class="page-form__label">
+                                                        Номер единой дисконтной карты
+                                                    </label>
+                                                    <div class="page-form__in">
+                                                        <input type="text" id="p_num1" value="4123154123">
+                                                        <div class="page-explanation">
+                                                            <span class="page-explanation__link">Где найти номер?</span>
+                                                            <div class="page-explanation__view">
+                                                                <img src="img/content/number.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="page-form__item">
+                                                    <label for="old__card" class="page-form__label">
+                                                        Номер старой карты
+                                                        <div class="label-clarification">
+                                                            Необходим для переноса накопленных бонусов
+                                                        </div>
+                                                    </label>
+                                                    <div class="page-form__in">
+                                                        <input type="text" id="old__card" placeholder="xxxxxx">
+                                                        
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="page-form__highlight">
+                                                    <div class="page-form__item m-required">
+                                                        <label class="page-form__label">
+                                                            Пол
+                                                        </label>
+                                                        <div class="page-form__in">
+                                                            <div class="radio-item">
+                                                                <input type="radio" id="radio1" name="v" checked>
+                                                                <label for="radio1">женский</label>
+                                                            </div>
+                                                            <div class="radio-item">
+                                                                <input type="radio" id="radio2" name="v">
+                                                                <label for="radio2">мужской</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="page-form__item m-required">
+                                                        <label for="p_date" class="page-form__label">
+                                                            Дата рождения
+                                                            <div class="label-clarification">
+                                                                Именинник получает дополнительные скидки
+                                                            </div>
+                                                        </label>
+                                                        <div class="page-form__in">
+                                                            <input type="text" id="p_date" value="22.10.1985" name="input__date">
+                                                        </div>
+                                                    </div>
+                                                    <div class="page-form__item">
+                                                        <div class="checkbox-item">
+                                                            <input type="checkbox" id="agree1" name="agree">
+                                                            <label for="agree1">
+                                                                Настоящим подтверждаю, что ознакомлен(а) с <a href="#">Правилами бонусной программы</a> и корректно ввел(а) данные.
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="page-form__item">
+                                                        <div class="checkbox-item">
+                                                            <input type="checkbox" id="agree2" name="agree">
+                                                            <label for="agree2">
+                                                                Я даю согласие на обработку своих персональных данных в соответствии с <a href="#">Политикой в отношении обработки персональных данных</a>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </label>
-                                        <div class="page-form__in">
-                                            <input type="text" id="old__card" placeholder="xxxxxx">
+
+                                            <div class="reg-view__item">
+                                                <div class="reg-view__title">Укажите ваш адрес</div>
+                                                <div class="page-form__item m-required">
+                                                    <label class="page-form__label">
+                                                        Область (обл. центр)
+                                                    </label>
+                                                    <div class="page-form__in">
+                                                        <select>
+                                                            <option value="" disabled selected>Выберите область</option>
+                                                            <option>Область 1</option>
+                                                            <option>Область 2</option>
+                                                            <option>Область 3</option>
+                                                            <option>Область 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="page-form__item m-required">
+                                                    <label class="page-form__label">
+                                                        Район (район. центр)
+                                                    </label>
+                                                    <div class="page-form__in">
+                                                        <select>
+                                                            <option value="" disabled selected>Выберите райцентр</option>
+                                                            <option>райцентр 1</option>
+                                                            <option>райцентр 2</option>
+                                                            <option>райцентр 3</option>
+                                                            <option>райцентр 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="page-form__item m-required">
+                                                    <label class="page-form__label">
+                                                        Населенный пункт
+                                                    </label>
+                                                    <div class="page-form__in">
+                                                        <select>
+                                                            <!-- <option value="" disabled selected>Выберите область</option> -->
+                                                            <option>Минск</option>
+                                                            <option>Брест</option>
+                                                            <option>Витебск</option>
+                                                            <option>Гродно</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="page-form__item m-required">
+                                                    <label class="page-form__label">
+                                                        Улица
+                                                    </label>
+                                                    <div class="page-form__in">
+                                                        <select>
+                                                            <!-- <option value="" disabled selected>Выберите улицу</option> -->
+                                                            <option>Ул. Корженевского</option>
+                                                            <option>Улица 2</option>
+                                                            <option>Улица 3</option>
+                                                            <option>Улица 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="page-form__item m-required">
+                                                    <label class="page-form__label">
+                                                        Номер дома
+                                                    </label>
+                                                    <div class="page-form__in">
+                                                        <div class="house-split">
+                                                            <div class="house-split__item"><input type="text" placeholder="Дом"></div>
+                                                            <div class="house-split__item"><input type="text" placeholder="Корпус"></div>
+                                                            <div class="house-split__item"><input type="text" placeholder="Подъезд"></div>
+                                                            <div class="house-split__item"><input type="text" placeholder="Этаж"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="house-split__add">
+                                                    <div class="checkbox-item">
+                                                        <input type="checkbox" id="private1" name="private">
+                                                        <label for="private1">
+                                                            Частный дом
+                                                        </label>
+                                                    </div>
+                                                </div> -->
+
+                                                <div class="page-form__item m-required">
+                                                    <label class="page-form__label">
+                                                        Номер квартиры
+                                                    </label>
+                                                    <div class="page-form__in m-flat">
+                                                        <input type="text" placeholder="Квартира">
+                                                        <div class="checkbox-item">
+                                                            <input type="checkbox" id="private1" name="private">
+                                                            <label for="private1">
+                                                                Частный дом
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="reg-view__item">
+                                                <div class="reg-view__title">Данные для входа в личный кабинет</div>
+                                                <div class="page-form__item m-required">
+                                                    <label for="password__ind" class="page-form__label">
+                                                        Придумайте пароль
+                                                    </label>
+                                                    <div class="page-form__in">
+                                                        <input type="password" id="password__ind" placeholder="Введите пароль для входа">
+                                                        <a href="#" class="password-toggle" data-show-password="#password__ind"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="house-split__add m-generate">
+                                                    <a href="#">Сгенерировать надежный пароль</a>
+                                                </div>
+                                            </div>
+                                            <div class="reg-view__item">
+                                                <div class="checkbox-item">
+                                                    <input type="checkbox" id="agree3" name="agree3">
+                                                    <label for="agree3">
+                                                        Я даю своё согласие получать новости об акциях, скидках и лучших предложениях ООО «ЗападХимТорг» и привлеченных им партнеров по SMS, Viber и иными доступными способами.
+                                                    </label>
+                                                </div>
+                                            </div>
                                             
+                                            
+                                            <div class="page-form__item">
+                                                <input type="submit" value="Зарегистрироваться" class="page-form__submit">
+                                            </div>
+                                            <div class="page-form__first">
+                                                Есть аккаунт? <a href="#">Войдите</a> 
+                                            </div>
                                         </div>
-                                    </div>
-
-
-
-                                    <div class="page-form__highlight">
-                                        <div class="page-form__item m-required">
-                                            <label class="page-form__label">
-                                                Пол
-                                            </label>
-                                            <div class="page-form__in">
-                                                <div class="radio-item">
-                                                    <input type="radio" id="radio1" name="v" checked>
-                                                    <label for="radio1">женский</label>
+                                    </form>
+                                </div>
+                                <div id="entity" class="tab-pane"> 
+                                    <form action="" method="post">
+                                        <div class="page-form">
+                                            <div class="reg-view__item">
+                                                <div class="reg-view__title">Общая информация</div>
+                                                <div class="page-form__item m-required">
+                                                    <label for="test1" class="page-form__label">
+                                                        Test 1
+                                                    </label>
+                                                    <div class="page-form__in">
+                                                        <input type="text" id="test1" placeholder="test1">
+                                                    </div>
                                                 </div>
-                                                <div class="radio-item">
-                                                    <input type="radio" id="radio2" name="v">
-                                                    <label for="radio2">мужской</label>
+                                                <div class="page-form__item m-required">
+                                                    <label for="test2" class="page-form__label">
+                                                        Test 2
+                                                    </label>
+                                                    <div class="page-form__in">
+                                                        <input type="text" id="test2" placeholder="test2">
+                                                    </div>
+                                                </div>
+                                                <div class="page-form__item">
+                                                    <label for="test3" class="page-form__label">
+                                                        Test 3
+                                                    </label>
+                                                    <div class="page-form__in">
+                                                        <input type="text" id="test3" placeholder="test3">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="page-form__item m-required">
-                                            <label for="p_date" class="page-form__label">
-                                                Дата рождения
-                                                <div class="label-clarification">
-                                                    Именинник получает дополнительные скидки
-                                                </div>
-                                            </label>
-                                            <div class="page-form__in">
-                                                <input type="text" id="p_date" value="22.10.1985" name="input__date">
-                                            </div>
-                                        </div>
-                                        <div class="page-form__item">
-                                            <div class="checkbox-item">
-                                                <input type="checkbox" id="agree1" name="agree">
-                                                <label for="agree1">
-                                                    Настоящим подтверждаю, что ознакомлен(а) с <a href="#">Правилами бонусной программы</a> и корректно ввел(а) данные.
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="page-form__item">
-                                            <div class="checkbox-item">
-                                                <input type="checkbox" id="agree2" name="agree">
-                                                <label for="agree2">
-                                                    Я даю согласие на обработку своих персональных данных в соответствии с <a href="#">Политикой в отношении обработки персональных данных</a>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="reg-view__item">
-                                    <div class="reg-view__title">Укажите ваш адрес</div>
-                                    <div class="page-form__item m-required">
-                                        <label class="page-form__label">
-                                            Область (обл. центр)
-                                        </label>
-                                        <div class="page-form__in">
-                                            <select>
-                                                <option value="" disabled selected>Выберите область</option>
-                                                <option>Область 1</option>
-                                                <option>Область 2</option>
-                                                <option>Область 3</option>
-                                                <option>Область 4</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="page-form__item m-required">
-                                        <label class="page-form__label">
-                                            Район (район. центр)
-                                        </label>
-                                        <div class="page-form__in">
-                                            <select>
-                                                <option value="" disabled selected>Выберите райцентр</option>
-                                                <option>райцентр 1</option>
-                                                <option>райцентр 2</option>
-                                                <option>райцентр 3</option>
-                                                <option>райцентр 4</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="page-form__item m-required">
-                                        <label class="page-form__label">
-                                            Населенный пункт
-                                        </label>
-                                        <div class="page-form__in">
-                                            <select>
-                                                <!-- <option value="" disabled selected>Выберите область</option> -->
-                                                <option>Минск</option>
-                                                <option>Брест</option>
-                                                <option>Витебск</option>
-                                                <option>Гродно</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="page-form__item m-required">
-                                        <label class="page-form__label">
-                                            Улица
-                                        </label>
-                                        <div class="page-form__in">
-                                            <select>
-                                                <!-- <option value="" disabled selected>Выберите улицу</option> -->
-                                                <option>Ул. Корженевского</option>
-                                                <option>Улица 2</option>
-                                                <option>Улица 3</option>
-                                                <option>Улица 4</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="page-form__item m-required">
-                                        <label class="page-form__label">
-                                            Номер дома
-                                        </label>
-                                        <div class="page-form__in">
-                                            <div class="house-split">
-                                                <div class="house-split__item"><input type="text" placeholder="Дом"></div>
-                                                <div class="house-split__item"><input type="text" placeholder="Корпус"></div>
-                                                <div class="house-split__item"><input type="text" placeholder="Подъезд"></div>
-                                                <div class="house-split__item"><input type="text" placeholder="Этаж"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="house-split__add">
-                                        <div class="checkbox-item">
-                                            <input type="checkbox" id="private1" name="private">
-                                            <label for="private1">
-                                                Частный дом
-                                            </label>
-                                        </div>
-                                    </div> -->
-
-                                    <div class="page-form__item m-required">
-                                        <label class="page-form__label">
-                                            Номер квартиры
-                                        </label>
-                                        <div class="page-form__in m-flat">
-                                            <input type="text" placeholder="Квартира">
-                                            <div class="checkbox-item">
-                                                <input type="checkbox" id="private1" name="private">
-                                                <label for="private1">
-                                                    Частный дом
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="reg-view__item">
-                                    <div class="reg-view__title">Данные для входа в личный кабинет</div>
-                                    <div class="page-form__item m-required">
-                                        <label for="password__ind" class="page-form__label">
-                                            Придумайте пароль
-                                        </label>
-                                        <div class="page-form__in">
-                                            <input type="password" id="password__ind" placeholder="Введите пароль для входа">
-                                            <a href="#" class="password-toggle" data-show-password="#password__ind"></a>
-                                        </div>
-                                    </div>
-                                    <div class="house-split__add m-generate">
-                                        <a href="#">Сгенерировать надежный пароль</a>
-                                    </div>
-                                </div>
-                                <div class="reg-view__item">
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="agree3" name="agree3">
-                                        <label for="agree3">
-                                            Я даю своё согласие получать новости об акциях, скидках и лучших предложениях ООО «ЗападХимТорг» и привлеченных им партнеров по SMS, Viber и иными доступными способами.
-                                        </label>
-                                    </div>
-                                </div>
-                                
-                                
-                                <div class="page-form__item">
-                                    <input type="submit" value="Зарегистрироваться" class="page-form__submit">
-                                </div>
-                                <div class="page-form__first">
-                                    Есть аккаунт? <a href="#">Войдите</a> 
+                                    </form>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div class="copyright">
                         2021 &copy; Интернет-магазин "Остров чистоты и вкуса". ЧТУП «ЗападХимТорг», УНП 590828925.<br>
