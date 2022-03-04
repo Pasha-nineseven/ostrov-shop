@@ -795,6 +795,9 @@
 			display: block;
 			max-width: 100%;
 		}
+		.personal-barcode__view{
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -886,17 +889,21 @@
 	display: flex;
 	align-items: center;
 	flex-wrap:wrap;
+	padding: 0 30px;
+   
 }
 
 .discont-change{
 	color: #fff;
 	margin-right: 30px;
-	border: 1px solid #FFFFFF;
 	border-radius: 10px;
 	font-size: 13px;
 	display: inline-flex;
 	align-items: center;
 	padding: 10px 20px;
+	background: linear-gradient(180deg,#0a7dcf 0,#026ab5 100%);
+	height: 40px;
+	margin-bottom: 30px;
 	&:before{
 		content: "";
 		display: inline-block;
@@ -904,6 +911,9 @@
 		height: 19px;
 		background: url(../img/svg/change.svg) center no-repeat;
 		margin: 0 8px 0 0;
+	}
+	&:hover{
+		background: linear-gradient(180deg,#026ab5 0,#0a7dcf 100%);
 	}
 }
 
@@ -913,6 +923,11 @@
 	font-size: 13px;
 	display: inline-flex;
 	align-items: center;
+	background: linear-gradient(180deg,#0a7dcf 0,#026ab5 100%);
+	padding: 10px 20px;
+	border-radius: 10px;
+	height: 40px;
+	margin-bottom: 30px;
 	&:before{
 		content: "";
 		display: inline-block;
@@ -920,6 +935,9 @@
 		height: 27px;
 		background: url(../img/svg/lost.svg) center no-repeat;
 		margin: 0 8px 0 0;
+	}
+	&:hover{
+		background: linear-gradient(180deg,#026ab5 0,#0a7dcf 100%);
 	}
 }
 

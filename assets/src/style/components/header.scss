@@ -80,3 +80,16 @@
     height: 24px;
     background: url(../img/svg/sett.svg) center no-repeat;
 }
+
+.logo-view{
+    display: flex;
+    align-items: center;
+    margin-right: -10px;
+    &__item{
+        padding-right: 10px;
+        img{
+            display: block;
+            max-width: 100%;
+        }
+    }
+}
