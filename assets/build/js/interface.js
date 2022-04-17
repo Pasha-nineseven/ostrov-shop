@@ -87,7 +87,7 @@ window.addEventListener('load', () => {
 
 
 	//calendar
-	const inputDate = document.querySelector('input[name="input__date"]');
+	const inputDate = document.querySelector('input[name="birth__date"]');
 	if (typeof (inputDate) != 'undefined' && inputDate != null) {
 		const datepicker = new Datepicker(inputDate, {
 			format: 'dd.mm.yyyy',
@@ -121,31 +121,36 @@ window.addEventListener('load', () => {
 
 
 	//popup
-	const modalTriggers = document.querySelectorAll('.popup-trigger')
-	const modalCloseTrigger = document.querySelector('.popup-modal__close')
-	const bodyBlackout = document.querySelector('.body-blackout')
+	const modalTriggers = document.querySelectorAll('.popup-trigger');
+	const modalCloseTrigger = document.querySelectorAll('.modal-close');
+	const p_modal = document.querySelectorAll('.popup-modal');
+	const bodyBlackout = document.querySelector('.body-blackout');
 
 	modalTriggers.forEach(trigger => {
 		trigger.addEventListener('click', (e) => {
 			e.preventDefault();
-			const { popupTrigger } = trigger.dataset
-			const popupModal = document.querySelector(`[data-popup-modal="${popupTrigger}"]`)
+			const { popupTrigger } = trigger.dataset;
+			const popupModal = document.querySelector(`[data-popup-modal="${popupTrigger}"]`);
 
-			popupModal.classList.add('is--visible')
-			bodyBlackout.classList.add('is-blacked-out')
+			popupModal.classList.add('is--visible');
+			bodyBlackout.classList.add('is-blacked-out');
 
 			popupModal.querySelector('.popup-modal__close').addEventListener('click', () => {
 				popupModal.classList.remove('is--visible')
 				bodyBlackout.classList.remove('is-blacked-out')
-			})
+			});
 
 			bodyBlackout.addEventListener('click', () => {
 				popupModal.classList.remove('is--visible')
 				bodyBlackout.classList.remove('is-blacked-out')
-			})
-		})
-	})
+			});
 
+			popupModal.querySelector('.modal-close').addEventListener('click', () => {
+				popupModal.classList.remove('is--visible')
+				bodyBlackout.classList.remove('is-blacked-out')
+			});
+		})
+	});
 
 	//file
 	if($('#attached').length>0){
@@ -164,7 +169,7 @@ window.addEventListener('load', () => {
 	}
 
 	//ACCORDEON2
-    $("body").on("click", ".address-accordeon__toggle", function(e){
+    $("body").on("click", ".address-accordeon__link", function(e){
         e.preventDefault();
         $(this).parents('.address-accordeon__item').toggleClass('active');
         $(this).parents('.address-accordeon__item').find('.address-accordeon__info').slideToggle(10);

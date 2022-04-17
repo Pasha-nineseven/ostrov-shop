@@ -150,7 +150,7 @@
         </div>
         <a href="#" class="btn">Отказаться</a>
         <div class="recover__back">
-            <a href="#">Отмена</a>
+            <a href="#" class="modal-close">Отмена</a>
         </div>
     </div>
 
@@ -175,7 +175,7 @@
                     <input type="submit" value="Проверить" class="page-form__submit">
                 </div>
                 <div class="recover__back">
-                    <a href="#">Отмена</a>
+                    <a href="#" class="modal-close">Отмена</a>
                 </div>
             </form>
         </div>
@@ -188,7 +188,7 @@
             3124123
         </div>
         <div class="recover__back">
-            <a href="#">Хорошо, спасибо</a>
+            <a href="#" class="modal-close">Хорошо, спасибо</a>
         </div>
     </div>
 
@@ -213,7 +213,7 @@
                     <input type="submit" value="Проверить" class="page-form__submit">
                 </div>
                 <div class="recover__back">
-                    <a href="#">Отмена</a>
+                    <a href="#" class="modal-close">Отмена</a>
                 </div>
             </form>
         </div>
@@ -461,12 +461,13 @@
             </div>
             <div class="recover-form">
                 <form action="#" method="post">
-                    <div class="page-form__item m-recover">
+                    <div class="page-form__item m-recover m-error">
                         <label for="code" class="page-form__label">
                             Номер телефона <span>*</span>
                         </label>
                         <div class="page-form__in">
                             <input type="tel" id="phone__entity" placeholder="+375 (__) ___-__-__">
+                            <span class="error-message">Номер телефона не зарегистрирован</span>
                         </div>
                     </div>
                     <input type="submit" value="Получить код" class="page-form__submit">
