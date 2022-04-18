@@ -484,7 +484,20 @@
         padding: 11px 4px;
         font-size: 13px;
     }
-    
+    .personal-links .btn {
+        margin-right: 0;
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .personal-links .edit-btn {
+        margin-right: 0;
+        color: #026ab5;
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width:480px){

@@ -87,7 +87,7 @@ window.addEventListener('load', () => {
 
 
 	//calendar
-	const inputDate = document.querySelector('input[name="birth__date"]');
+	const inputDate = document.querySelector('input[name="birth_date"]');
 	if (typeof (inputDate) != 'undefined' && inputDate != null) {
 		const datepicker = new Datepicker(inputDate, {
 			format: 'dd.mm.yyyy',

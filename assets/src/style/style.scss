@@ -643,6 +643,22 @@
 }
 .personal-info__aft{
 	font-size: 18px;
+	position: relative;
+	.data-show{
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		display: block!important;
+		opacity: 0;
+		pointer-events: none;
+		&.active{
+			pointer-events: all;
+			position: static;
+			opacity: 1;
+			transform: none;
+		}
+	}
 }
 .personal-info__view{
 	max-width: 635px;
@@ -666,6 +682,19 @@
 .personal-links{
 	display: flex;
 	align-items: center;
+	.btn{
+		margin-right: 10px;
+		&:hover{
+			color: #fff;
+		}
+	}
+	.edit-btn{
+		margin-right: 10px;
+		color: #026ab5;
+		&:hover{
+			color: #130b3d;
+		}
+	}
 }
 
 .personal-edit{
@@ -1834,4 +1863,17 @@ ymaps[class$="-copyright"] {
 		background: #026ab5;
 		pointer-events: none;
 	}
+}
+
+body .suggestions-wrapper {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    z-index: 7;
+}
+
+body .suggestions-suggestions{
+	top: 100%;
+    width: 100%;
 }
