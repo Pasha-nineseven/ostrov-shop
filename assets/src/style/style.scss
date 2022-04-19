@@ -151,6 +151,11 @@
 		&:hover{
 			background: linear-gradient(180deg, #026AB5 0%, #0A7DCF 100%);
 		}
+		&.m-disabled{
+			background: #ccc;
+			pointer-events: none;
+			box-shadow: none;
+		}
 	}
 	&__in{
 		position: relative;
@@ -386,6 +391,7 @@
 			margin-bottom: 0;
 		}
 		&.m-required{
+			position: relative;
 			.page-form__label{
 				font-weight: 700;
 				position: relative;
@@ -395,7 +401,19 @@
 					position: absolute;
 					color: #e21a1a;
 					right: calc(100% + 5px);
-					top: 1px;
+					top: 2px;
+				}
+			}
+			.checkbox-item{
+				position: relative;
+				&:before{
+					content: "*";
+					display: inline-block;
+					position: absolute;
+					color: #e21a1a;
+					right: calc(100% + 5px);
+					top: 3px;
+					font-weight: 700;
 				}
 			}
 			.label-clarification{
@@ -683,13 +701,13 @@
 	display: flex;
 	align-items: center;
 	.btn{
-		margin-right: 10px;
+		margin-right: 15px;
 		&:hover{
 			color: #fff;
 		}
 	}
 	.edit-btn{
-		margin-right: 10px;
+		margin-right: 15px;
 		color: #026ab5;
 		&:hover{
 			color: #130b3d;
@@ -727,7 +745,7 @@
 		width: 13px;
 		height: 13px;
 		background: url(../img/svg/remove.svg) center no-repeat;
-		margin: 2px 7px 0 0;
+		margin: 0 4px 0 0;
 	}
 }
 
