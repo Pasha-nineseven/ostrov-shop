@@ -374,6 +374,25 @@
     .page-header.m-personal .page-header__wrap{
         align-items: flex-start;
     }
+    .personal__aside {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 30px;
+    }
+    .discont{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .personal__data {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    .personal__view{
+        .discont {
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+    }
 }
 
 @media screen and (max-width:650px){

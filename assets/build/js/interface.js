@@ -98,24 +98,25 @@ window.addEventListener('load', () => {
 
 
 	//accordeon
-	document.addEventListener('click', function (event) {
-		if (!event.target.classList.contains('accordeon__toggle')) return;
-		var content = document.querySelector(event.target.hash);
-		if (!content) return;
-		event.preventDefault();
-		if (content.classList.contains('active')) {
-			event.target.innerHTML = "Детали";
-			content.classList.remove('active');
-			return;
-		}
-		var accordions = document.querySelectorAll('.accordion__content.active');
-		for (var i = 0; i < accordions.length; i++) {
-			accordions[i].classList.remove('active');
-			event.target.innerHTML = "Детали";
-		}
-		content.classList.toggle('active');
-		event.target.innerHTML = "Скрыть";
+	const acc__item = document.querySelectorAll('.accordeon__details');
+	acc__item.forEach(item => {
+		item.addEventListener('click', (e) => {
+			e.preventDefault();
+			var content = document.querySelector(e.target.hash);
 
+			if (content.classList.contains('active')) {
+				e.target.querySelector('.accordeon__toggle').innerHTML = "Детали";
+				content.classList.remove('active');
+				return;
+			}
+			var accordions = document.querySelectorAll('.accordion__content.active');
+			for (var i = 0; i < accordions.length; i++) {
+				accordions[i].classList.remove('active');
+				e.target.querySelector('.accordeon__toggle').innerHTML = "Детали";
+			}
+			content.classList.toggle('active');
+			e.target.querySelector('.accordeon__toggle').innerHTML = "Скрыть";
+		})
 	});
 
 
@@ -161,6 +162,7 @@ window.addEventListener('load', () => {
 			} else {
 				var filename = $(this).val().split('/').pop().split('\\').pop();
 			}
+			$(this).parent('.input-wrap').prev('.attached-file').empty();
 			$(this).parent('.input-wrap').prev('.attached-file').prepend('<div class="file-item"><div class="file-info"><span>'+filename+'</span><a href="javascript:;" class="file-del"></a></div></div>');
 		});
 		$(document).on('click','.file-del',function(){
