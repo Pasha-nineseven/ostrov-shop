@@ -258,6 +258,17 @@
         max-height: 100vh;
         overflow-y: auto;
     }
+    .personal-info__aft{
+        .page-form__in{
+            margin-bottom: 35px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        .error-message{
+            bottom: 100%;
+        }
+    }
 }
 
 @media screen and (max-width: 767px){

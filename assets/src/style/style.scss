@@ -188,6 +188,7 @@
 	max-width: 240px;
     min-width: 150px;
 	text-align: left;
+	z-index: 4;
 	&:before{
 		content: "";
 		display: inline-block;
@@ -667,6 +668,7 @@
 .personal-info__aft{
 	font-size: 18px;
 	position: relative;
+	flex:1;
 	.data-show{
 		position: absolute;
 		top: 50%;
@@ -1938,4 +1940,11 @@ body .suggestions-suggestions{
 		background: url(../img/svg/close.svg) center no-repeat;
 		margin-left: 10px;
 	}	
+}
+
+
+.page-form__highlight{
+	.page-form__item.m-required .checkbox-item:before{
+		left: -11px;
+	}
 }
